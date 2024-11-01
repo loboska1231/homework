@@ -1,0 +1,19 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+@media screen and (max-width: 768px){
+    body{
+        width: 768px;
+        padding: 32px 0;
+    }
+    main{
+        width: 720px;
+    }
+    section{
+        justify-content: flex-start;
+    }
+    .block{
+        width: 218px;
+        height: 240px;
+    }
+}

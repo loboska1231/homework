@@ -1,0 +1,224 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    width: 100%;
+    height: 113px;
+    background: #24204A;
+    position: fixed;
+    filter: drop-shadow(0 4px 4px rgba(0,0,0,0.25));
+}
+header div{
+    height: 100%;
+    width: 1153px;
+    margin:0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header div nav ul{
+    width: 500px;
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+}
+header div h2{
+    color: #E5E5E5;
+    font-family: Inter,sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    opacity: 0.6;
+}
+h2{
+    color: #FFF;
+    font-family: Inter,sans-serif;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1.8px;
+}
+p{
+    color: #8E88C1;
+    font-family: Inter, sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 130%; /* 20.8px */
+    letter-spacing: 0.8px;
+}
+a{
+    color: #FFF;
+    font-family: Inter,sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: none;
+    opacity: 0.6;
+}
+.led{
+    padding: 180px 0 101px 0 ;
+    height: 692px;
+    background: #24204A;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.led div:first-of-type{
+    width: 500px;
+}
+.led div:last-of-type{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 375px;
+    height: 411px;
+    flex-shrink: 0;
+    border-radius: 8px;
+    background: #827EAC;
+    box-shadow: 0 4px 50px  rgba(0, 0, 0, 0.25);
+}
+.led>div>button:first-of-type{
+    width: 145px;
+    margin:35px 0;
+    height: 41px;
+    flex-shrink: 0;
+    border-radius: 8px;
+    border:none;
+    background: #4B4864;
+    color:  #8E88C1;
+    font-family: Inter,sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 130%; /* 20.8px */
+    letter-spacing: 0.8px;
+}
+.led>div{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 570px;
+}
+.led>div>button:last-of-type{
+    width: 200px;
+    height: 56px;
+    margin:35px 0;
+    flex-shrink: 0;
+    border-radius: 8px;
+    background: #3F50E7;
+    /* 1 */
+    box-shadow: 0px 6px 20px 0px rgba(0, 255, 224, 0.20);
+    color: #FFF;
+    text-align: center;
+    font-family: Inter,sans-serif;
+    border:none;
+    font-size: 16px;
+    font-weight: 500;
+}
+.led>div>img{
+    width: 318px;
+    height: 318px;
+    flex-shrink: 0;
+}
+.stuff{
+    height: 764px;
+    flex-shrink: 0;
+    background: #071341;
+    display: flex;
+    padding-top: 50px;
+    flex-direction: column;
+}
+.images{
+    width:1153px;
+    margin:0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.temp{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:18px
+}
+.photo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 56px;
+    height: 56px;
+    flex-shrink: 0;
+    border-radius: 8px;
+    background: #FF6853;
+}
+span{
+    color: #FFF;
+    font-family: Inter,sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+}
+.temp:nth-child(2)>.photo{
+    background: #FF537C;
+}
+.temp:nth-child(3)>.photo{
+    background: #80D2C4;
+}
+.temp:nth-child(4)>.photo{
+    background: #3F50E7;
+}
+.temp:nth-child(5)>.photo{
+    background: #95CB7C;
+}
+.stuff>h1{
+    width: 1074px;
+    margin:50px auto ;
+    color: #FFF;
+    text-align: center;
+    font-family: Inter,sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 42px; /* 116.667% */
+}
+.stuff>p{
+    text-align: center;
+    margin: 0 0 50px 0;
+}
+.temp2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 209px;
+    height: 206px;
+    flex-shrink: 0;
+    border-radius: 8px;
+    border: 2px solid #8E88C1;
+}
+.temp2>div{
+    width: 176px;
+}
+.temp2 img{
+    margin: 40px auto 26px;
+    width: 52px;
+    height: 52px;
+    opacity: 0.6;
+}
+.footer>div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 94px;
+    flex-shrink: 0;
+    background: #071341;
+}
+.footer>div>span{
+
+
+    color: #FFF;
+    font-family: Inter,sans-serif;
+    font-size: 22px;
+    font-weight: 500;
+}

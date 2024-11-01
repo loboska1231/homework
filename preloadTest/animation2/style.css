@@ -1,0 +1,54 @@
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.animation{
+    margin: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+}
+.boat img{
+    height: 100px;
+    width: 100px;
+    animation: preload 4s ease-in infinite alternate;
+}
+@keyframes preload {
+    0%{
+        transform: translate(0,50px);
+    }
+    10%{
+        transform: translate(80px,0);
+    }
+    20%{
+        transform: translate(160px,50px);
+    }
+    30%{
+        transform: translate(240px,0);
+    }
+    40%{
+        transform: translate(320px,50px);
+    }
+    50%{
+        transform: translate(400px,0);
+    }
+    60%{
+        transform: translate(480px,50px);
+    }
+    70%{
+        transform: translate(560px,0);
+    }
+    80%{
+        transform: translate(640px,50px);
+    }
+    90%{
+        transform: translate(720px,0);
+    }
+    100%{
+        transform: translate(800px,50px);
+    }
+}
+

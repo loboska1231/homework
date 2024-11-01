@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            margin:0;
+            scroll-behavior: smooth;
+        }
+        section{
+            height:100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            flex-direction: column;
+            padding: 2%;
+        }
+        #first{
+            background-color: #9393f9;
+        }
+        #second{
+            background-color: yellow;
+        }
+        #third{
+            background-color: green;
+        }
+        a{
+            font-size:4em;
+            text-decoration: none;
+            color:black;
+        }
+        p{
+            margin:10px;
+        }
+    </style>
+</head>
+<body>
+<section id="first">
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, aperiam architecto, dignissimos dolorum in laudantium magni mollitia neque non officia quaerat repellat sapiente soluta tempore tenetur velit veritatis. Provident, sequi.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, aperiam architecto, dignissimos dolorum in laudantium magni mollitia neque non officia quaerat repellat sapiente soluta tempore tenetur velit veritatis. Provident, sequi.</p>
+    <p><a href="#second">
+        &#8595;
+    </a></p>
+</section>
+<section id="second">
+    <p><a href="#first">
+        &#8593;
+    </a></p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam at atque, blanditiis corporis deleniti dignissimos distinctio dolore ea eius esse fuga fugit ipsum labore laboriosam, nesciunt non officiis tempore tenetur.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam at atque, blanditiis corporis deleniti dignissimos distinctio dolore ea eius esse fuga fugit ipsum labore laboriosam, nesciunt non officiis tempore tenetur.</p>
+    <p><a href="#third">
+        &#8595;
+    </a></p>
+</section>
+<section id="third">
+    <p><a href="#second">
+        &#8593;
+    </a></p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At cum in iste modi nam nemo, nostrum rerum suscipit tempore veniam! Ab aliquam atque deleniti eaque expedita in mollitia nulla obcaecati.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At cum in iste modi nam nemo, nostrum rerum suscipit tempore veniam! Ab aliquam atque deleniti eaque expedita in mollitia nulla obcaecati.</p>
+
+</section>
+</body>
+</html>

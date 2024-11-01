@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+  <style>
+    *{
+      margin:0;
+    }
+    .flex{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .grid{
+      display: grid;
+      height: 100vh;
+      align-content: center;
+      grid-template-columns: 70% 30%;
+      grid-template-rows: repeat(5,20%);
+      grid-template-areas:
+      "header header "
+      "first tops "
+      "second none "
+      "third bottoms "
+      "footer footer ";
+    }
+    .side{
+      display: grid;
+      height: 300%;
+      grid-template-rows: 50% 50%;
+      grid-template-areas:
+      "tops"
+      "bottoms";
+    }
+    header{
+      grid-area: header;
+      background: #8D8484;
+    }
+    footer{
+      grid-area:footer;
+      background-color: lightgray;
+    }
+    section,.side{
+      color:white;
+    }
+    .top{
+      grid-area: tops;
+      background: #827878;
+    }
+    .bottom{
+      grid-area: bottoms;
+      background: #a47070;
+    }
+    .first{
+      grid-area: first;
+      background: #776969;
+    }
+    .second{
+      grid-area: second;
+      background: #643030;
+    }
+    .third{
+      grid-area: third;
+      background: #441818;
+    }
+  </style>
+</head>
+<body>
+  <div class="grid">
+    <header class="flex"><p>Header</p></header>
+    <section class="first flex"><p>Content - 1</p></section>
+    <section class="second flex"><p>Content - 2</p></section>
+    <section class="third flex" ><p>Content - 3</p></section>
+    <div class="side">
+      <aside class="top flex"><p>spam-1</p></aside>
+      <aside class="bottom flex"><p>spam-3</p></aside>
+    </div>
+    <footer class="flex"><p>footer</p></footer>
+  </div>
+</body>
+</html>
