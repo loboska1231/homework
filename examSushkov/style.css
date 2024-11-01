@@ -1,8 +1,8 @@
 body{
     width: 1440px;
-    color: #222;
     font-family: Poppins,sans-serif;
     font-size: 18px;
+    color: #222;
     font-weight: 400;
     line-height: 30px;
     background: #FAF4F2;
@@ -13,54 +13,42 @@ main{
 section{
     width: 1140px;
 }
-.reza{
-    display: flex;
-}
-.reza>img{
-    align-self: flex-end;
-    width: 406px;
-    height: 406px;
-    flex-shrink: 0;
-}
 .preview{
     display: flex;
-    gap:160px;
+    justify-content: space-between;
     height: 465px;
     margin-bottom: 125px;
 }
 .preview h2{
     font-size: 40px;
-    margin-bottom: 7px;
     line-height: 62px;
 }
 .preview p{
-    margin-bottom: 54px;
+    margin:7px 0 54px;
 }
-.preview>div{
+.info1{
     display: flex;
     flex-direction: column;
     width: 509px;
 }
-.info>img{
-    width: 240px;
-    height: 48px;
-    flex-shrink: 0;
+.reza{
+    width:406px ;
+}
+.reza>img{
+    width: 406px;
 }
 .preview div nav ul{
     width: 240px;
     height: 48px;
-    flex-shrink: 0;
     display: flex;
     gap:16px;
 }
-
-.buttons
-input[type="submit"],
+.buttons input[type="submit"],
 input[type="file"]{
+    border: none;
     font-size: 18px;
     width: 151px;
     height: 55px;
-    flex-shrink: 0;
     border-radius: 10px;
     background: #FF2950;
     color: white;
@@ -88,10 +76,9 @@ input[type="file"]{
     padding-top: 25px;
     gap:30px;
 }
-.result{
+.results{
     width: 1140px;
     height: 519px;
-    flex-shrink: 0;
     border-radius: 35px;
     background: #FF7315;
     display: flex;
@@ -100,7 +87,7 @@ input[type="file"]{
     color: white;
     gap:32px;
 }
-.result p{
+.results p{
     margin:19px 0;
     color: white;
     font-size: 24px;
@@ -108,42 +95,38 @@ input[type="file"]{
     line-height: 36px; /* 150% */
 }
 
-.result h1{
+.results h1{
     color: white;
     font-size: 72px;
     font-weight: 600;
     line-height: 62px; /* 86.111% */
 }
-.result h2{
+.results h2{
     color: white;
     font-size: 48px;
     font-weight: 600;
     line-height: 62px; /* 129.167% */
 }
-.result>img{
+.results>img{
     width: 430px;
     height: 329px;
-    flex-shrink: 0;
 }
-.result>div{
+.results>div{
     width: 570px;
 }
-.reason h2{
-    margin:120px 0 100px;
-}
-.reasons{
+.advantages{
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.reason h2{
+.reasons h2{
+    margin:120px 0 100px;
     text-align: center;
-    color: #222;
     font-size: 48px;
     font-weight: 600;
     line-height: 62px; /* 129.167% */
 }
-.item{
+.advantages>div{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -151,32 +134,29 @@ input[type="file"]{
     flex-direction: column;
     width: 240px;
 }
-.item span{
+.advantages>div span{
     margin:50px 0 12px;
-    color: #222;
     font-size: 24px;
     font-weight: 500;
     line-height: 36px;
 }
-.item p{
+.advantages>div p{
     color: rgba(34, 34, 34, 0.50);
     font-size: 18px;
     font-weight: 400;
     line-height: 30px;
 }
-.photo{
+.circle{
     display: flex;
     justify-content: center;
     align-items: center;
     width: 98px;
     height: 98px;
-    flex-shrink: 0;
     border-radius: 50%;
     background: rgba(34, 34, 34, 0.10);
 }
 .portfolio h2{
     margin:125px 0 64px;
-    color: #222;
     font-size: 48px;
     font-weight: 600;
     line-height: 123.6%; /* 59.328px */
@@ -189,14 +169,15 @@ input[type="file"]{
     grid-template-columns: repeat(3,334px);
     grid-template-rows: repeat(2,324px);
 }
-.info2{
+.stuff{
+    margin: 125px -150px 0;
+    box-sizing: border-box;
     padding-top: 48px;
     width:1440px;
     height: 643px;
-    flex-shrink: 0;
     background: #FF7315;
 }
-.info2 h2{
+.stuff h2{
     margin:0 auto 111px;
     color: white;
     text-align: center;
@@ -217,22 +198,14 @@ input[type="file"]{
 .container div{
     width: 529px;
     height: 179px;
-    flex-shrink: 0;
     border-radius: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
     background: white;
 }
-.container h2{
-    color: #F9F9F9;
-    font-size: 48px;
-    font-weight: 600;
-    line-height: 60px; /* 125% */
-}
 .container div p{
     width: 420px;
-    color: #222;
     font-size: 24px;
     font-weight: 400;
 }
@@ -243,7 +216,6 @@ input[type="file"]{
     flex-direction: column;
 }
 .priceSec h1{
-    color: #222;
     font-size: 48px;
     font-weight: 600;
     line-height: 123.6%; /* 59.328px */
@@ -258,17 +230,18 @@ input[type="file"]{
     gap:67px;
 }
 .plan{
+    list-style-type: none;
+    padding: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 335px;
     height: 500px;
-    flex-shrink: 0;
     border-radius: 15px;
     background: white;
     box-shadow: 0 20px 40px 0 rgba(255, 115, 21, 0.10);
 }
-.top{
+.header{
     color: white;
     font-size: 24px;
     font-weight: 600;
@@ -279,7 +252,6 @@ input[type="file"]{
     align-items: center;
     width: 335px;
     height: 66px;
-    flex-shrink: 0;
     border-radius: 15px 15px 0 0;
     background: #FF9B70;
     box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.05);
@@ -307,20 +279,35 @@ input[type="file"]{
     line-height: 24px;
     text-transform: capitalize;
 }
-.plan ul{
-    list-style-image: url("resources/Check.png");
-}
 .plan ul li{
-    list-style-image: url("resources/Check.png");
-    color: #222;
+    position: relative;
+    padding-left: 25px; /* Отступ для маркера */
     font-kerning: none;
     font-feature-settings: 'calt' off;
     font-size: 14px;
     font-weight: 500;
     line-height: 24px; /* 171.429% */
     text-transform: capitalize;
-    margin: 0 0 17px;
+    margin-bottom: 17px;
 }
+.plan>ul>li:before {
+    content: "";
+    position: absolute;
+    left:-15px;
+    top:0;
+    width:25px;
+    height:25px;
+    background-image: url("resources/Check.png"); /* Путь к вашему изображению */
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.silver ul li:nth-child(n+3):before{
+    background-image: url("resources/Close.png");
+}
+.golden ul li:nth-child(n+5):before{
+    background-image: url("resources/Close.png");
+}
+
 .contact {
     margin:100px 0 125px;
     display: flex;
@@ -328,7 +315,6 @@ input[type="file"]{
     align-items: center;
     width: 1110px;
     height: 224px;
-    flex-shrink: 0;
     border-radius: 25px;
     background: #FF7315;
     padding: 0 100px;
@@ -344,12 +330,10 @@ input[type="file"]{
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #222;
     font-size: 24px;
     font-weight: 600;
     width: 259px;
     height: 70px;
-    flex-shrink: 0;
     border-radius: 10px;
     background: white;
     box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.01);
@@ -370,13 +354,12 @@ input[type="file"]{
     align-items: center;
     width: 270px;
     height: 364px;
-    flex-shrink: 0;
     border-radius: 15px;
     background: white;
     box-shadow: 0 7px 20px 0 rgba(0, 0, 0, 0.07);
 }
 .items>div h2{
-    color: #222;
+    margin:24px 0 12px;
     font-size: 16px;
     font-weight: 500;
     line-height: 123.6%;
@@ -394,13 +377,12 @@ input[type="file"]{
     text-transform: capitalize;
 }
 footer{
+    background: #F1F1F1;
     width: 1440px;
     height: 170px;
-    flex-shrink: 0;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #222;
     font-size: 18px;
     font-weight: 500;
 }
