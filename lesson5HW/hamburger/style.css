@@ -1,0 +1,139 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style-type: none;
+
+}
+body{
+    background: #1E1E1E;
+    padding: 36px 240px;
+    text-transform: uppercase;
+    font-family: "Bowlby One";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    color:#E9E3DC;
+}
+nav{
+    display: flex;
+    justify-content: flex-end;
+}
+nav ul{
+    display: flex;
+    align-items: center;
+    gap: 59px;
+}
+nav ul a:hover{
+    animation: test 0.2s linear infinite alternate;
+}
+.active{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 203px;
+    height: 60px;
+    flex-shrink: 0;
+    background: #B3A0CD;
+    color:#1E1E1E;
+}
+section{
+    margin-top:80px;
+}
+.title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+.title h1{
+    font-size: 4em;
+}
+.title img {
+    transition: 1s;
+}
+.info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    background-color: #D1EF53;
+    padding:100px;
+    color:#1E1E1E;
+    gap:28px;
+}
+.info h2{
+    font-size: 3em;
+}
+.info p{
+    text-transform: lowercase;
+    color: #1E1E1E;
+    font-family: "Inter";
+    font-style: normal;
+    margin-bottom: 30px;
+}
+.info .active{
+    width: 176px;
+    height: 60px;
+    flex-shrink: 0;
+    border: 4px solid #1E1E1E;
+    background: #E9E3DC;
+    box-shadow: 8px 8px 0px 0px #000;
+}
+.stuff{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    margin-bottom: 64px;
+}
+.stuff img{
+    transition: 1s;
+
+}
+.stuff div{
+    display: flex;
+    justify-content: center;
+    gap:40px;
+    margin-bottom: 64px ;
+}
+.stuff div img{
+    width: 50%;
+}
+footer{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    flex-direction: column;
+}
+footer h2{
+    font-size: 3em;
+}
+footer .active{
+    width: 196px;
+    height: 60px;
+    flex-shrink: 0;
+    background: #D1EF53;
+}
+footer a:hover{
+    animation: test 0.5s ease-in-out infinite alternate;
+}
+img:hover{
+    transition: 1s;
+    transform: scale(1.05);
+}
+@keyframes test {
+    0%{
+        transform: translate(0,0);
+    }
+    50%{
+        transform: translate(6px,0);
+
+    }
+    100%{
+        transform: translate(-6px,0);
+    }
+
+}
