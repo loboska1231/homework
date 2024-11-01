@@ -362,7 +362,7 @@ input[type="file"]{
     margin:24px 0 12px;
     font-size: 16px;
     font-weight: 500;
-    line-height: 123.6%;
+    line-height: 123%;
     text-transform: capitalize;
 }
 .items>div p{
